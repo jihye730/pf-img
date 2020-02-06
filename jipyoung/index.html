@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>한국조폐공사 모작 사이트</title>
+    
+    <!-- 제이쿼리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <!-- 아울 캐러셀 불러오기, 제이쿼리 보다 밑에 있어야 합니다. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+    <!-- index.css 불러오기 -->
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+    <!-- 상단 바 -->
+
+    <div class="header row">
+        <div class="header-wrap cell-left">
+            <h1 class="logo">
+                <a href="#">
+                    <span class="logo-box">JIPYONG</span>
+                    <span class="logo-title">법무법인[유] 지평</span>
+                </a>
+            </h1>
+        </div>
+        <div class="top-menu cell-right">
+            <div class="menu-1">
+                <ul class="row">
+                    <li class="cell">
+                        <a href="#">지평소개</a>
+                        <ul>
+                            <li><a href="#">회사개요</a></li>
+                            <li><a href="#">사무소</a></li>
+                        </ul>
+                    </li>
+                    <li class="cell">
+                        <a href="#">업무분야</a>
+                        <ul>
+                            <li><a href="#">분야별</a></li>
+                            <li><a href="#">산업별</a></li>
+                            <li><a href="#">국가별</a></li>
+                        </ul>
+                    </li>
+                    <li class="cell">
+                        <a href="#">구성원</a>
+                        <ul>
+                            <li><a href="#">구성원 검색</a></li>
+                        </ul>
+                    </li>
+                    <li class="cell"><a href="#">소식/자료</a>
+                        <ul>
+                            <li><a href="#">지평소식</a></li>
+                            <li><a href="#">업무사례</a></li>
+                            <li><a href="#">미디어 라이브러리</a></li>
+                            <li><a href="#">언론보도</a></li>
+                            <li><a href="#">뉴스레터</a></li>
+                            <li><a href="#">자료실</a></li>
+                        </ul>
+                    </li>
+                    <li class="cell"><a href="#">사회책임경영</a>
+                        <ul>
+                            <li><a href="#">CSR정책</a></li>
+                            <li><a href="#">공익정책</a></li>
+                            <li><a href="#">CSR/공익소식</a></li>
+                            <li><a href="#">보고서 다운로드</a></li>
+                        </ul>
+                    </li>
+                    <li class="cell"><a href="#">인재영업</a>
+                        <ul>
+                            <li><a href="#">인재상</a></li>
+                            <li><a href="#">지원안내</a></li>
+                            <li><a href="#">지원하기</a></li>
+                        </ul>
+                    </li>
+                    <div class="gnb-menu cell">
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <a class="menu-bars" href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <nav>
+            <div class="pop-up">
+                <a href="#" class="pop-logo"><img src="http://www.jipyong.com/kr/resource/images/logo_02.png" alt=""></a>
+                <a href="#" class="close-btn"><img src="http://www.jipyong.com/kr/resource/images/ico/close_01.png" alt=""></a>
+            </div>
+            <ul class="row menu">
+                <li class="cell">
+                    <a href="#">지평소개</a>
+                    <ul>
+                        <li><a href="#">회사개요</a></li>
+                        <li><a href="#">사무소</a></li>
+                    </ul>
+                </li>
+                <li class="cell">
+                    <a href="#">업무분야</a>
+                    <ul>
+                        <li><a href="#">분야별</a></li>
+                        <li><a href="#">산업별</a></li>
+                        <li><a href="#">국가별</a></li>
+                    </ul>
+                </li>
+                <li class="cell">
+                    <a href="#">구성원</a>
+                    <ul>
+                        <li><a href="#">구성원 검색</a></li>
+                    </ul>
+                </li>
+                <li class="cell">
+                    <a href="#">소식/자료</a>
+                    <ul>
+                        <li><a href="#">지평소식</a></li>
+                        <li><a href="#">업무사례</a></li>
+                        <li><a href="#">미디어 라이브러리</a></li>
+                        <li><a href="#">언론보도</a></li>
+                        <li><a href="#">뉴스레터</a></li>
+                        <li><a href="#">자료실</a></li>
+                    </ul>
+                </li>
+                <li class="cell">
+                    <a href="#">사회책임경영</a>
+                    <ul>
+                        <li><a href="#">CSR정책</a></li>
+                        <li><a href="#">공약정책</a></li>
+                        <li><a href="#">CSR/공익소식</a></li>
+                        <li><a href="#">보고서 다운로드</a></li>
+                    </ul>
+                </li>
+                <li class="cell">
+                    <a href="#">인재영업</a>
+                    <ul>
+                        <li><a href="#">인재상</a></li>
+                        <li><a href="#">지원안내</a></li>
+                        <li><a href="#">지원하기</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--컨텐츠 - 영상-->
+    <div class="content content-1">
+        <div class="input-title">
+            <h2>GLOBAL REACH <br> CLIENT DEDICATION <br> SOCIAL RESPONSIBILITY</h2>
+            <div class="input-txt">사람중심, 진정성, 최고의 실력과 정성으로 문제를 해결하는<br>전문가 공동체의 새로운 지평</div>
+        </div>
+        <div class="dark">
+            <div class="input-search search-box">
+                <input type="text" placeholder="검색어 입력">
+                <a href="#" class="search-ico absolute-right absolute-middle">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </div>
+        <video class="bv-video" muted="" preload="metadata" loop="true" autoplay="true" style="position: absolute; width: 1920px; height: 1080px; top:0; left:0;">
+            <source src="http://www.jipyong.com/uploads/1_1_20190605185831.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- section01 -->
+    <div class="section01">
+        <div class="section-wrap con">
+            <!-- 슬라이드 -->
+            <div class="slider-wrap">
+                <div class="slider">
+                    <ul class="news-slider row">
+                        <a href="#" class="active">
+                            <li class="cell txt">
+                                <span>지평소식</span>
+                                <div>새해 복 많이 받으십시오.</div>
+                            </li>
+                            <li class="cell"><img src="http://www.jipyong.com/uploads/news/2020/01/4534_1_20200106093959.jpg" alt=""></li>
+                        </a>
+                        <a href="#">
+                            <li class="cell txt">
+                                <span>지평소식</span>
+                                <div>지평, ‘2019 이데일리 좋은 일자리 대상’ 시상식에서 ‘고용노동부 장관상’ 수상</div>
+                            </li>
+                            <li class="cell"><img src="http://www.jipyong.com/uploads/news/2019/12/_1_20191206153712.jpg" alt=""></li>
+                        </a>
+                        <a href="#">
+                            <li class="cell txt">
+                                <span>지평소식</span>
+                                <div>지평, 한국 로펌 최초 ‘유엔글로벌콤팩트(UNGC)’ 가입</div>
+                            </li>
+                            <li class="cell"><img src="http://www.jipyong.com/uploads/news/2019/11/4479_1_20191118122958.jpg" alt=""></li>
+                        </a>
+                        <a href="#">
+                            <li class="cell txt">
+                                <span>지평소식</span>
+                                <div>법무법인(유) 지평, 사단법인 두루 설립 5주년을 맞아 로펌 최초로 ‘사회적 가치 경영 선언’</div>
+                            </li>
+                            <li class="cell"><img src="http://www.jipyong.com/uploads/news/2019/09/4376_1_20190930103442.jpg" alt=""></li>
+                        </a>
+                    </ul>
+                    <div class="page-btns absolute-left">
+                        <div class="active">01</div>
+                        <div>02</div>
+                        <div>03</div>
+                        <div>04</div>
+                    </div>
+                    <div class="side-btns absolute-right" row>
+                        <div class="left cell relative">
+                            <i class="absolute-middle fas fa-inverse fa-chevron-left"></i>
+                        </div>
+                        <div class="right cell relative">
+                            <i class="absolute-middle fas fa-inverse fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont-wrap con relative">
+                <h3>업무사례</h3>
+                <a href="#" class="btn-more absolute-right">
+                    <img src="http://www.jipyong.com/kr/resource/images/ico/more.png" alt="">
+                </a>
+                <div class="news-wrap">
+                    <ul class="news-list row">
+                        <li class="cell">
+                            <a href="#">
+                                <div class="category">인사ㆍ노무</div>
+                                <p class="title">
+                                    교인들을 대리한 예배방해금지가처분신청 사건에서 인용결정을 받는동시에 상대방이 제기한 예배방해금지가처분신청은 기각시킨 사례
+                                </p>
+                                <div class="date">2019.12.18</div>
+                            </a>
+                        </li>
+                        <li class="cell">
+                            <a href="#">
+                                <div class="category">인사ㆍ노무</div>
+                                <p class="title">
+                                    장부열람등사가처분 결정에 따르지 않는 교회를 상대로 간접강제결정을 받은 사례
+                                </p>
+                                <div class="date">2019.12.18</div>
+                            </a>
+                        </li>
+                        <li class="cell">
+                            <a href="#">
+                                <div class="category">인사ㆍ노무</div>
+                                <p class="title">
+                                    상병휴직 후 복직기한 내 복직청원이 이루어졌는지가 쟁점이 된 사건에서 승소한 사례
+                                </p>
+                                <div class="date">2019.12.18</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section02 -->
+    <div class="section02">
+        <div class="txt-wrap">
+            <div class="txt-box">
+                <h3>세상을 두루 살피고,<br> 사람을 널리 이롭게</h3>
+                <p class="text">법무법인(유) 지평은 인권을 존중하는 사회, 민주적이고 투명한 사회, 약자를 배려하는 공정한 사회를 지향합니다</p>
+                <a href="#" class="btn">자세히 보기</a>
+            </div>
+        </div>
+    </div>
+
+    <!--section03-->
+    <div class="section03">
+        <div class="site con">
+            <div class="site-wrap">
+                <div class="logo">DUROO.ORG</div>
+                <div class="text-wrap">
+                    <a href="#">사단법인 두루 웹사이트</a>
+                    <p>전문성을 바탕으로 윤리성과 공익성, 민주성을 실천하는 법률전문가 <br> 공동체로 사회에 공헌하고자 합니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section04 -->
+    <div class="section04 text-align-center">
+        <h3>사무소</h3>
+        <div class="tab-box">
+            <div class="head text-align-center">
+                <ul class="slider-2 owl-carousel owl-theme">
+                    <li class="item" style="background:url(http://www.jipyong.com/uploads/office/2019/08/31_1_20190829180227.jpg) 50% 0px / cover no-repeat">
+                        <div class="country">한국</div>
+                        <h4>부산</h4>
+                        <a href="#">자세히 보기</a>
+                    </li>
+                    <li class="item" style="background:url(http://www.jipyong.com/uploads/23_1_20190624185736.jpg) 50% 0px / cover no-repeat">
+                        <div class="country">중국</div>
+                        <h4>상하이</h4>
+                        <a href="#">자세히 보기</a>
+                    </li>
+                    <li class="item" style="background:url(http://www.jipyong.com/uploads/18_1_20190611150010.jpg) 50% 0px / cover no-repeat">
+                        <div class="country">한국</div>
+                        <h4>서울</h4>
+                        <a href="#">자세히 보기</a>
+                    </li>
+                    <li class="item" style="background:url(http://www.jipyong.com/uploads/24_1_20190624185759.jpg) 50% 0px / cover no-repeat">
+                        <div class="country">한국</div>
+                        <h4>순천</h4>
+                        <a href="#">자세히 보기</a>
+                    </li>
+                    <li class="item" style="background:url(http://www.jipyong.com/uploads/_1_20190611152728.jpg) 50% 0px / cover no-repeat">
+                        <div class="country">베트남</div>
+                        <h4>호치민</h4>
+                        <a href="#">자세히 보기</a>
+                    </li>
+                    <li class="item" style="background:url(http://www.jipyong.com/uploads/_1_20190611153141.jpg) 50% 0px / cover no-repeat">
+                        <div class="country">캄보디아</div>
+                        <h4>프놈펜</h4>
+                        <a href="#">자세히 보기</a>
+                    </li>
+                    <li class="item" style="background:url(http://www.jipyong.com/uploads/office/2019/08/37_1_20190830150910.jpg) 50% 0px / cover no-repeat">
+                        <div class="country">인도네시아</div>
+                        <h4>자카르타</h4>
+                        <a href="#">자세히 보기</a>
+                    </li>
+                    <li class="item" style="background:url(http://www.jipyong.com/uploads/_1_20190624185709.jpg) 50% 0px / cover no-repeat">
+                        <div class="country">미얀마</div>
+                        <h4>양곤</h4>
+                        <a href="#">자세히 보기</a>
+                    </li>
+                    <li class="item" style="background:url(http://www.jipyong.com/uploads/_1_20190624185858.jpg) 50% 0px / cover no-repeat">
+                        <div class="country">러시아</div>
+                        <h4>모스크바</h4>
+                        <a href="#">자세히 보기</a>
+                    </li>
+                    <li class="item" style="background:url(http://www.jipyong.com/uploads/29_1_20190624190039.jpg) 50% 0px / cover no-repeat">
+                        <div class="country">베트남</div>
+                        <h4>하노이</h4>
+                        <a href="#">자세히 보기</a>
+                    </li>
+                    <li class="item" style="background:url(http://www.jipyong.com/uploads/_1_20190624190002.jpg) 50% 0px / cover no-repeat">
+                        <div class="country">라오스</div>
+                        <h4>비엔티안</h4>
+                        <a href="#">자세히 보기</a>
+                    </li>
+                    <li class="item" style="background:url(http://www.jipyong.com/uploads/office/2019/08/31_1_20190829180227.jpg) 50% 0px / cover no-repeat">
+                        <div class="country">한국</div>
+                        <h4>부산</h4>
+                        <a href="#">자세히 보기</a>
+                    </li>
+                    <li class="item" style="background:url(http://www.jipyong.com/uploads/office/2019/08/31_1_20190829180227.jpg) 50% 0px / cover no-repeat">
+                        <div class="country">한국</div>
+                        <h4>부산</h4>
+                        <a href="#">자세히 보기</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            법무법인(유) 지평은 해외전문성 강화에 노력하여 한국 로펌 중 가장 많은
+            <br> 해외사무소를 두고 있습니다.
+        </div>
+    </div>
+
+    <!--section 05-->
+    <div class="section05">
+        <div class="cont-wrap con relative">
+            <h3>언론보도</h3>
+            <a href="#" class="btn-more absolute-right">
+                <img src="http://www.jipyong.com/kr/resource/images/ico/more.png" alt="">
+            </a>
+            <div class="news-wrap">
+                <ul class="news-list row">
+                    <li class="cell">
+                        <a href="#">
+                            <div class="category">리걸타임즈</div>
+                            <p class="title">
+                                'IPO 자문 활발' 지평 자본시장팀
+                            </p>
+                            <div class="date">2019.12.18</div>
+                        </a>
+                    </li>
+                    <li class="cell">
+                        <a href="#">
+                            <div class="category">법률신문</div>
+                            <p class="title">
+                                법무법인 지평, 한·아세안 특별정상회의 기간 무료법률상담
+                            </p>
+                            <div class="date">2019.12.05</div>
+                        </a>
+                    </li>
+                    <li class="cell">
+                        <a href="#">
+                            <div class="category">법률신문</div>
+                            <p class="title">
+                                로펌과 사회적 가치
+                            </p>
+                            <div class="date">2019.11.25</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--section 06-->
+    <div class="section06">
+        <div class="cont-wrap con relative">
+            <h3>뉴스레터</h3>
+            <a href="#" class="btn-more absolute-right">
+                <img src="http://www.jipyong.com/kr/resource/images/ico/more.png" alt="">
+            </a>
+            <div class="news-wrap">
+                <ul class="news-list">
+                    <li>
+                        <div class="date">2020<strong>01</strong></div>
+                        <strong class="category">IPㆍIT</strong>
+                        <a href="#" class="title">[Legal Update] 데이터 3법 국회 본회의 통과</a>
+                        <a href="#" class="pdf"></a>
+                    </li>
+                    <li>
+                        <div class="date">2019<strong>12</strong></div>
+                        <strong class="category">지평</strong>
+                        <a href="#" class="title">지평 뉴스레터</a>
+                        <a href="#" class="pdf"></a>
+                    </li>
+                    <li>
+                        <div class="date">2019<strong>12</strong></div>
+                        <strong class="category">노동</strong>
+                        <a href="#" class="title">노동 뉴스레터</a>
+                        <a href="#" class="pdf"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <a href="#" class="to-top">
+            <span class="blind"></span>
+        </a>
+        <div class="footer-wrap">
+            <ul class="row city-list">
+                <li class="cell">서울</li>
+                <li class="cell">순천</li>
+                <li class="cell">부산</li>
+                <li class="cell">상하이</li>
+                <li class="cell">호치민</li>
+                <li class="cell">하노이</li>
+                <li class="cell">자카르타</li>
+                <li class="cell">프놈펜</li>
+                <li class="cell">비엔티안</li>
+                <li class="cell">양곤</li>
+                <li class="cell">모스크바</li>
+            </ul>
+            <ul class="row data-list">
+                <li class="cell">브로슈어 다운로드</li>
+                <li class="cell">뉴스레터 구독</li>
+                <li class="cell">면책공고</li>
+                <li class="cell">유한책임</li>
+                <li class="cell">개인정보처리방침</li>
+            </ul>
+            <div class="related-site"><a href="#">사단법인 두루</a></div>
+            <div class="text-wrap">
+                <div class="company"><span class="blind"></span></div>
+                <div class="adress">서울 서대문구 충정로 60 KT&G 서대문타워 10층 (우)03740</div>
+                <ul class="contact">
+                    <li><span>TEL</span>
+                        <div>02-6200-1600</div>
+                    </li>
+                    <li>
+                        <span>FAX</span>
+                        <div>02-6200-0800</div>
+                    </li>
+                </ul>
+                <div class="copyright">© JIPYONG LLC. ALL RIGHTS RESERVED.</div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1141 @@
+/*  폰트 적용 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+    font-family: 'Noto Sans serif', sans-serif;
+    background-color: #f6f6f3;
+}
+
+.header-wrap {
+    font-family: 'Crimson Text', serif;
+}
+
+.content .input-title h2 {
+    font-family: 'Crimson Text', serif;
+}
+
+/* 스크롤 */
+body {
+    min-height: 200vh;
+}
+
+/* 노말라이즈 */
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 라이브러리 */
+.con {
+    margin: 0 auto;
+}
+
+.cell {
+    float: left;
+    box-sizing: border-box;
+}
+
+.cell-right {
+    float: right;
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute-right {
+    position: absolute;
+    right: 0;
+}
+
+.absolute-left {
+    position: absolute;
+    left: 0;
+}
+
+.absolute-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.img-box > img {
+    width: 100%;
+    display: block;
+}
+
+img {
+    overflow: hidden;
+}
+
+/* 커스텀 */
+.con {
+    width: 1200px;
+}
+
+/* video */
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+.bg-video::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.bg-video > video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 로고 */
+.header-wrap {
+    margin-top: 14px;
+}
+
+.header-wrap > h1 {
+    position: absolute;
+    margin-left: 20px;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.header-wrap > h1 > a {
+    display: block;
+}
+
+.header-wrap > h1 > a > .logo-title {
+    font-size: 22px;
+    letter-spacing: -1.7px;
+    color: white;
+    font-weight: 800;
+}
+
+.header-wrap > h1 > a > .logo-box {
+    background-color: #df1e36;
+    padding: 5px 12px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+/* 스크롤 헤더 */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    z-index: 10;
+}
+
+html.not-scroll-top-0 .header-wrap {
+    margin-top: 0;
+}
+
+html.not-scroll-top-0 .header-wrap > h1 {
+    margin-top: 10px;
+}
+
+html.not-scroll-top-0 .header {
+    background-color: #f6f6f3;
+    position: fixed;
+}
+
+html.not-scroll-top-0 .header .logo-title,
+html.not-scroll-top-0 .header .top-menu a {
+    color: black;
+}
+
+/* 헤더 - 상단메뉴 */
+.header .top-menu {
+    position: relative;
+    margin-left: 20px;
+    top: 12px;
+    left: 0;
+    z-index: 10;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.header .menu-1 > ul > li {
+    position: relative;
+}
+
+.header .menu-1 > ul ul {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 150px;
+    top: 37px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header .menu-1 > ul ul > li > a {
+    font-size: 16px;
+    margin: 10px 0;
+    display: block;
+}
+
+.header .menu-1 > ul > li > a {
+    display: block;
+    padding: 0 20px;
+    position: relative;
+    color: white;
+}
+
+.header .menu-1 ul > li:hover > a {
+    color: #df1e36;
+}
+
+.header .menu-1 > ul > li:hover > ul {
+    display: block;
+}
+
+.header .menu-1 > ul > li:hover > a::after {
+    content: "";
+    background-color: #df1e36;
+    bottom: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 2px;
+    z-index: 1;
+    position: absolute;
+}
+
+.header .menu-1 .gnb-menu > a > i {
+    color: #df1e36;
+    padding: 0 10px;
+    font-size: 28px;
+}
+
+.bv-video {
+    z-index: -1;
+}
+
+/* 인풋 타이틀 */
+.content-1 {
+    width: 100%;
+    height: 1080px;
+}
+
+.content .input-title {
+    position: relative;
+    color: white;
+    display: inline-block;
+    transform: translateX(-50%);
+    top: 35%;
+    left: 50%;
+    z-index: 1;
+    text-align: center;
+}
+
+.content .input-title > h2 {
+    font-size: 2.4rem;
+    letter-spacing: 12px;
+    position: relative;
+    padding-bottom: 10px;
+    line-height: 1.5;
+}
+
+.content .input-title > h2::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1400px;
+    background-color: #df1e36;
+    opacity: 50%;
+    height: 0.4px;
+}
+
+.content .input-title > .input-txt {
+    margin: 0 4px;
+    font-size: 1.2rem;
+    letter-spacing: -2px;
+    padding-top: 15px;
+    line-height: 2;
+}
+
+/* 검색박스 */
+.dark {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 1080px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.content .search-box {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 24%;
+}
+
+.content .search-box > input {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    color: #afafaf;
+    width: 380px;
+    font-size: 16px;
+    letter-spacing: -1px;
+    padding: 13px 30px;
+    border-bottom: #df1e36 solid 2px;
+}
+
+.content .search-box > input::placeholder {
+    color: #afafaf;
+}
+
+.content .search-box > a {
+    color: #df1e36;
+    right: 5%;
+    font-size: 1.4rem;
+}
+
+/* 섹션01 */
+.section01 {
+    margin: 0 auto;
+    height: 1170px;
+}
+
+.section01 > .seciton-wrap {
+    z-index: 10;
+}
+
+.slider-wrap {
+    position: relative;
+    background-color: #fff;
+    height: 400px;
+    top: -40px;
+}
+
+/* 슬라이더 */
+.section01 .slider .news-slider > a {
+    position: absolute;
+    opacity: 0;
+    transition: opacity .7s;
+}
+
+.section01 .slider .news-slider > a.active {
+    opacity: 1;
+}
+
+.section01 .slider .news-slider a > .txt {
+    width: 400px;
+    height: 400px;
+    background-color: #df1e36;
+    padding: 40px;
+    color: #ffffff;
+}
+
+.section01 .slider .news-slider a > .txt > span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.section01 .slider .news-slider a > .txt > div {
+    padding: 30px 0 0;
+    font-size: 18px;
+    max-width: 800px;
+}
+
+/* 슬라이드 버튼 */
+.section01 .slider .page-btns {
+    bottom: 0;
+    margin: 40px;
+}
+
+.section01 .slider .page-btns > div {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0 7px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.section01 .slider .page-btns > div.active,
+.slider .page-btns > div:hover {
+    color: #000;
+}
+
+.section01 .slider .side-btns {
+    bottom: 0;
+    cursor: pointer;
+}
+
+.section01 .slider .side-btns > .right {
+    width: 64px;
+    height: 64px;
+    background-color: #df1e36;
+}
+
+.section01 .slider .side-btns > .right:hover,
+.slider .side-btns > .left:hover {
+    background-color: white;
+}
+
+.section01 .slider .side-btns > .right:hover > i,
+.slider .side-btns > .left:hover > i {
+    color: #df1e36;
+}
+
+.section01 .slider .side-btns > .left {
+    width: 64px;
+    height: 64px;
+    background-color: #df1e36;
+}
+
+.section01 .slider .side-btns > .right > i {
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.section01 .slider .side-btns > .left > i {
+    right: 50%;
+    transform: translateX(50%) translateY(-50%);
+}
+
+/* 콘트뉴스 */
+.section01 .cont-wrap {
+    margin-top: 90px;
+}
+
+.section01 .cont-wrap > h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.section01 .cont-wrap > a {
+    top: 8px;
+    right: 0.3%;
+}
+
+.section01 .cont-wrap .news-wrap {
+    margin-top: 35px;
+}
+
+.section01 .cont-wrap .news-wrap > ul > li {
+    border-top: #df1e36 solid 1px;
+    border-left: #df1e36 solid 1px;
+}
+
+.section01 .cont-wrap .news-wrap > ul > li {
+    width: 386.5px;
+    height: 451px;
+    margin-right: 20px;
+}
+
+.section01 .cont-wrap .news-wrap > ul > li:last-child {
+    margin: 0;
+}
+
+.section01 .cont-wrap .news-wrap > ul > li > a {
+    padding: 40px;
+    display: block;
+}
+
+.section01 .cont-wrap .news-wrap > ul > li > a > .category {
+    color: #df1e36;
+    font-size: 0.89rem;
+    letter-spacing: -1.8px;
+    font-weight: bold;
+}
+
+.section01 .cont-wrap .news-wrap > ul > li:hover {
+    background-color: white;
+}
+
+.section01 .cont-wrap .news-wrap > ul > li > a > .title {
+    padding: 15px 0;
+    font-size: 20px;
+    letter-spacing: -1.8px;
+    line-height: 2rem;
+}
+
+.section01 .cont-wrap .news-wrap > ul > li > a > .date {
+    bottom: 5%;
+    font-size: 16px;
+    position: absolute;
+    color: #333333;
+}
+
+/* 섹션 02 */
+.section02 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(http://www.jipyong.com/kr/resource/images/bg/section_02.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-bottom: 300px;
+}
+
+.section02 > .txt-wrap {
+    text-align: center;
+}
+
+.section02 > .site-wrap {
+    text-align: center;
+}
+
+.section02 > .txt-wrap > .txt-box > h3 {
+    padding-top: 394px;
+    padding-bottom: 20px;
+    display: block;
+    font-size: 2.5em;
+    font-family: 'Noto Serif KR', serif;
+    color: #ffffff;
+    font-weight: normal;
+    line-height: 3.4rem;
+    position: relative;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+.section02 > .txt-wrap > .txt-box > h3::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1400px;
+    opacity: 50%;
+    background-color: #df1e36;
+    height: 0.8px;
+}
+
+.section02 > .txt-wrap > .txt-box > p {
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: -2px;
+    font-weight: 400;
+    line-height: 4rem;
+}
+
+.section02 > .txt-wrap > .txt-box > a {
+    color: #df1e36;
+    border: #df1e36 solid 1px;
+    padding: 18px 110px;
+    font-size: 1.2rem;
+    letter-spacing: -1px;
+    line-height: 3.5rem;
+    transition: all .3s;
+}
+
+.section02 > .txt-wrap > .txt-box > a:hover {
+    background-color: #df1e36;
+    color: #fff;
+}
+
+/* 사이트 박스 */
+.section03 .site {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: -150px;
+    z-index: 10;
+}
+
+.section03 .site > .site-wrap {
+    background: #fff url(http://www.jipyong.com/kr/resource/images/bg/site.jpg
+) 100% 0 no-repeat;
+    max-width: 1200px;
+    height: 200px;
+    text-align: left;
+    box-shadow: 0px 20px 15px 20px rgba(0, 0, 0, 0.02);
+}
+
+.section03 > .site > .site-wrap > div {
+    color: #df1e36;
+}
+
+.section03 > .site > .site-wrap > .logo {
+    font-weight: bold;
+    position: absolute;
+    top: 14%;
+    left: 5%;
+}
+
+.section03 > .site > .site-wrap > .text-wrap {
+    text-align: left;
+    position: absolute;
+    left: 20%;
+    top: 15%;
+}
+
+.section03 > .site > .site-wrap > .text-wrap > a {
+    padding: 0 25px 0 0;
+    font-size: 2.4rem;
+    background: url(http://www.jipyong.com/kr/resource/images/ico/arrow_04.png) 100% 50% no-repeat;
+    line-height: 1;
+}
+
+.section03 > .site > .site-wrap > .text-wrap > p {
+    padding-top: 1.1rem;
+    font-size: 18px;
+    letter-spacing: -1px;
+    line-height: 2rem;
+}
+
+/* 섹션 4 - h3 */
+.section04 > h3 {
+    padding-top: 12rem;
+    text-align: center;
+    padding-bottom: 2.4rem;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #000;
+    font-weight: normal;
+    letter-spacing: -1px;
+}
+
+/* 탭박스 */
+.section04 .tab-box {
+    margin: 0 auto;
+}
+
+.section04 .tab-box > .head {
+    height: 420px;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.section04 .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item {
+    max-width: 960px;
+    height: 420px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.section04 .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section04 .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .country {
+    display: block;
+    position: relative;
+    padding-top: 9.1rem;
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1;
+    z-index: 1;
+}
+
+.section04 .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > h4 {
+    position: relative;
+    padding-top: 15px;
+    font-size: 3.1rem;
+    color: #fff;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: normal;
+    z-index: 1;
+}
+
+.section04 .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > a {
+    position: relative;
+    padding: 15px 90px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid #df1e36;
+    color: #df1e36;
+    z-index: 1;
+    font-size: 1.2rem;
+    transition: all .3s;
+}
+
+.section04 .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > a:hover {
+    background-color: #df1e36;
+    color: #fff;
+}
+
+.section04 .content {
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 1.22rem;
+    line-height: 2.4rem;
+    letter-spacing: -2px;
+    font-weight: 450;
+}
+
+/* 섹션 5 - 콘트뉴스 */
+.section05 {
+    margin: 0 auto;
+}
+
+.section05 .cont-wrap {
+    margin-top: 15rem;
+}
+
+.section05 .cont-wrap > h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.section05 .cont-wrap > .btn-more {
+    top: 8px;
+    right: 0.3%;
+}
+
+.section05 .cont-wrap .news-wrap > ul > li {
+    border-top: #df1e36 solid 1px;
+    border-left: #df1e36 solid 1px;
+    margin-top: 35px;
+}
+
+.section05 .cont-wrap .news-wrap > ul > li {
+    width: 386.5px;
+    height: 451px;
+    margin-right: 20px;
+}
+
+.section05 .cont-wrap .news-wrap > ul > li:last-child {
+    margin-right: 0;
+}
+
+.section05 .cont-wrap .news-wrap > ul > li > a {
+    padding: 40px;
+    display: block;
+}
+
+.section05 .cont-wrap .news-wrap > ul > li > a > .category {
+    color: #df1e36;
+    font-size: 0.99rem;
+    font-weight: bold;
+    position: relative;
+    letter-spacing: -1.8px;
+}
+
+.section05 .cont-wrap .news-wrap > ul > li > a > .category::after {
+    background: url(http://www.jipyong.com/kr/resource/images/ico/outlink.png) 0 0 no-repeat;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    font-size: 1px;
+    background-size: 16px auto;
+}
+
+.section05 .cont-wrap .news-wrap > ul > li:hover {
+    background-color: white;
+}
+
+.section05 .cont-wrap .news-wrap > ul > li > a > .title {
+    padding: 15px 0;
+    font-size: 20px;
+    letter-spacing: -1.8px;
+    line-height: 2rem;
+}
+
+.section05 .cont-wrap .news-wrap > ul > li > a > .date {
+    bottom: 5%;
+    font-size: 16px;
+    position: absolute;
+    color: #333333;
+}
+
+/* 섹션 6 - 뉴스레터 */
+.section06 {
+    margin: 0 auto;
+}
+
+.section06 .cont-wrap {
+    margin-top: 16rem;
+}
+
+.section06 .cont-wrap > h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.section06 .cont-wrap > .btn-more {
+    top: 8px;
+    right: 0.3%;
+}
+
+.section06 .cont-wrap .news-wrap {
+    margin-top: 35px;
+}
+
+.section06 .cont-wrap .news-wrap > ul > li {
+    border-top: #df1e36 solid 1px;
+    border-left: #df1e36 solid 1px;
+    width: 100%;
+    min-height: 130px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.section06 .cont-wrap .news-wrap > ul > li:first-child {
+    margin: 0;
+}
+
+.section06 .cont-wrap .news-wrap li .date {
+    position: absolute;
+    left: 4rem;
+    top: 40px;
+    padding-right: 4rem;
+    font-weight: 500;
+    color: #000;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: -1px;
+    font-family: 'Roboto';
+}
+
+.section06 .cont-wrap .news-wrap li .date strong {
+    display: block;
+    padding-top: 0.1rem;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: -1px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.section06 .cont-wrap .news-wrap > ul > li > .category {
+    color: #df1e36;
+    padding-left: 8rem;
+    font-size: 16px;
+    letter-spacing: -1px;
+    line-height: 1;
+    font-weight: bold;
+    display: block;
+    padding-top: 40px;
+}
+
+.section06 .cont-wrap .news-wrap > ul > li:hover {
+    background-color: white;
+}
+
+.section06 .cont-wrap .news-wrap > ul > li > .title {
+    display: block;
+    padding-left: 8rem;
+    padding-right: 10rem;
+    font-size: 1.2rem;
+    line-height: 2.2;
+    color: #000;
+    font-weight: 400;
+    white-space: nowrap;
+    letter-spacing: -2px;
+}
+
+.section06 .cont-wrap .news-wrap > ul > li:hover > .title {
+    color: #df1e36;
+}
+
+/* pdf */
+.section06 .news-wrap .news-list > li .pdf {
+    background: url(http://www.jipyong.com/kr/resource/images/ico/pdf_02.png) 0 0 no-repeat;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    width: 35px;
+    height: 14px;
+    background-size: 35px auto;
+    font-size: 1px;
+}
+
+/* 푸터 */
+.footer {
+    border-top: 1px solid #df1e36;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-color: #f6f6f3;
+    margin-top: 16rem;
+}
+
+.footer .to-top {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 47px;
+    background: #df1e36 url(http://www.jipyong.com/kr/resource/images/ico/arrow_06.png) 50% 50% no-repeat;
+}
+
+.footer-wrap {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background: #f6f6f3 url(http://www.jipyong.com/kr/resource/images/bg/footer.png) 50% 0 no-repeat;
+    text-align: center;
+}
+
+.footer-wrap .city-list {
+    padding: 8rem 0;
+    display: inline-block;
+}
+
+.footer-wrap .city-list > li {
+    color: #df1e36;
+    padding: 0 15px 0 16px;
+    font-size: 18px;
+    position: relative;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.footer-wrap .city-list > li:not(:last-child)::after {
+    content: "";
+    background-color: #efb5ba;
+    display: block;
+    position: absolute;
+    top: 0.4rem;
+    right: 0;
+    height: 8px;
+    width: 1px;
+}
+
+.footer-wrap .data-list {
+    font-size: 14px;
+}
+
+.footer-wrap .data-list > li {
+    padding: 0 9px 0 10px;
+    position: relative;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+
+.footer-wrap .data-list > li:not(:last-child)::after {
+    content: "";
+    background-color: #acacaa;
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 0;
+    height: 14px;
+    width: 1px;
+}
+
+/* 관련 회사 */
+.footer-wrap .related-site {
+    float: right;
+    margin-top: -30px;
+}
+
+.footer-wrap .related-site > a {
+    position: relative;
+    border: 1px solid #df1e36;
+    font-size: 14px;
+    line-height: 4rem;
+    color: #df1e36;
+    padding: 10px 180px 10px 20px;
+    letter-spacing: -1px;
+}
+
+.footer-wrap .related-site > a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 18px;
+    top: 14px;
+    width: 8px;
+    height: 14px;
+    background: url(http://www.jipyong.com/kr/resource/images/ico/arrow_02.png) 0 0 no-repeat;
+    background-size: 8px auto;
+}
+
+.footer-wrap .related-site:hover > a {
+    background-color: #df1e36;
+    color: #fff;
+}
+
+.footer-wrap .related-site:hover > a::after {
+    background: url(http://www.jipyong.com/kr/resource/images/ico/arrow_02_active.png) 0 0 no-repeat;
+    background-size: 8px auto;
+}
+
+.footer-wrap .text-wrap .contact > li {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.2rem;
+    color: #000;
+    letter-spacing: -1px;
+}
+
+.footer-wrap .text-wrap .contact > li > div {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    letter-spacing: -1px;
+}
+
+.footer-wrap .text-wrap .adress {
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+
+.footer-wrap .text-wrap .copyright {
+    font-size: 14px;
+    letter-spacing: -1px;
+    margin-top: 20px;
+}
+
+/* 하단푸터 로고 */
+.footer-wrap .text-wrap {
+    clear: both;
+    text-align: left;
+}
+
+.footer-wrap .text-wrap .company {
+    display: block;
+    width: 298px;
+    height: 28px;
+    margin-bottom: 20px;
+    background: url(http://www.jipyong.com/kr/resource/images/logo_02.png) 0 0 no-repeat;
+    background-size: 250px;
+}
+
+/* 팝업메뉴 - 로고,버튼 */
+.pop-up {
+    z-index: 101;
+    width: 100%;
+    display: none;
+}
+
+nav.active .pop-up {
+    display: block;
+}
+
+.pop-up .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 25px;
+}
+
+.pop-up .pop-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+}
+
+/* 팝업 메뉴 */
+nav {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 260px;
+    z-index: 100;
+    text-align: center;
+    padding-top: 80px;
+    transform: translateY(-100%);
+    transition: transform .3s;
+}
+
+nav.active {
+    transform: translateY(0);
+}
+
+nav .menu {
+    display: inline-block;
+}
+
+nav .menu li {
+    margin: 0 20px;
+}
+
+nav .menu > li > a {
+    font-weight: bold;
+    position: relative;
+    font-size: 17px;
+}
+
+nav .menu > li:hover > a {
+    color: #df1e36;
+}
+
+nav .menu > li:hover > a::after {
+    content: "";
+    background-color: #df1e36;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 1px;
+}
+
+nav .menu ul > li:first-child {
+    margin-top: 20px;
+}
+
+nav .menu ul > li {
+    font-size: 14px;
+    padding-bottom: 8px;
+}
