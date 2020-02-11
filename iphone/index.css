@@ -1,0 +1,241 @@
+/* 페이지네이션 */
+.pagination {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.pagination a {
+    display: block;
+    color: #aaa;
+    position: relative;
+    padding: 20px;
+}
+
+.pagination a.active:after {
+    background-color:rgba(255,255,255,0);
+    width:10px;
+    height:10px;
+    border:solid #aaa 2px;
+}
+
+.pagination a .hover-text {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform:translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    padding-right: 15px;
+    white-space:nowrap;
+}
+
+.pagination a:hover .hover-text {
+    opacity: 1;
+}
+
+.pagination a:after {
+    content: "";
+    transition: box-shadow 0.5s ease;
+    width: 5px;
+    height: 5px;
+    display: block;
+    background-color:#aaa;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+}
+/* 페이지네이션 끝 */
+/* 각페이지 공통 */
+.panel {
+    position:relative;
+    background-color:#fff;
+    box-sizing:border-box;
+}
+.panel .content h2 {
+    margin-bottom:20px;
+    font-size:54px;
+    color:#555555;
+}
+.panel .content p {
+    line-height:1.8;
+}
+.inner {
+    width:1270px;
+    margin:0 auto;
+    position:relative;
+    height:100%;
+}
+/* HOME */
+.panel.home {
+    background-color: #f0f2f4;
+    border-bottom: 1px solid #ddd;
+    overflow:hidden;
+}
+.panel.home > .inner > .gallery1 {
+    position:absolute;
+    left:30%;
+    top:80px;
+}
+.home .header-content {
+    position:absolute;
+    left:50px;
+    top:40px;
+}
+.home .header-content > h1 {
+    font-size:74px;
+    color:#555555;
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    line-height:80px;
+    width:317.5px;
+}
+.home .header-content p {
+    font-size:20px;
+    padding:0 15px 0 0;
+    margin-top:-25px;
+}
+
+.home .header-content a {
+    color:#666;
+    position:relative;
+    padding-right:30px;
+}
+.home .header-content a::before {
+    content:"";
+    position:absolute;
+    background-color:#666;
+    top:12px;
+    right:0;
+    width:12px;
+    height:1.5px;
+    transform:rotate(45deg);
+}
+.home .header-content a::after {
+    content:"";
+    position:absolute;
+    background-color:#666;
+    top:19px;
+    right:0;
+    width:12px;
+    height:1.5px;
+    transform:rotate(-45deg);
+}
+/* panel 1 - design */
+.panel1 .content {
+    position:absolute;
+    width:535px;
+    left:670px;
+    top:5%;
+}
+.content h2 {
+    font-weight:500;
+}
+.content p {
+    font-size:1.16rem;
+    line-height:8px;
+    color:#808080;
+}
+.panel1 .img1 {
+    position:absolute;
+    top:10%;
+    left:260px;
+    transition:left 0.6s ease 0.5s;
+}
+.panel1 .img1 > img {
+    height:100%;
+    width:100%;
+    display:block;
+}
+.panel1.visited .gallery1 {
+    left:0;
+}
+.panel1.visited .gallery2 {
+    left:275px;
+    z-index:1;
+}
+.panel1.visited .gallery3 {
+    left:540px;
+}
+
+/* panel2 - features */
+.panel2 .content {
+    position:absolute;
+    width:535px;
+    left:950px;
+    top:30px;
+}
+.panel2 .con {
+    height:100vh;
+}
+.con {
+    width:calc(283px * 5);
+    margin:0 auto;
+}
+.panel2 .gallery-wrap1 {
+    margin-left:19px;
+    transform:translateY(100px);
+}
+html[data-current-page-name="iOS7"] .panel2 .gallery-wrap1, .panel2.active .gallery-wrap1 {
+    transform:translateY(0);
+    transition:transform 1s;
+}
+.panel2 .gallery-wrap1 > .cell:first-child > img {
+    padding-top:50%;
+}
+.panel2 .gallery-wrap1 > .cell {
+    width:20%;
+}
+.panel2 .gallery-wrap1 > .cell:first-child > img {
+    padding-top:50%;
+}
+.panel2 .gallery-wrap2 {
+    width:543px;
+    left:50%;
+}
+.panel2 .gallery-wrap2 {
+    transform:translateY(100px);
+}
+html[data-current-page-name="iOS7"] .panel2 .gallery-wrap2, .panel2.active .gallery-wrap2 {
+    transform:translateY(0);
+    transition:transform 2s;
+}
+.panel2 .cell > img {
+    width:100%;
+    display:block;
+}
+
+/* panel 3 */
+.panel3 .content {
+    text-align:center;
+    transition:opacity .8s ease .5s;
+    position:absolute;
+    top:0;
+    width:65%;
+    margin:auto;
+    left:0;
+    right:0;
+}
+.panel3 .gallery-wrap {
+    position:relative;
+    width:840px;
+    height:780px;
+    margin:0 auto;
+}
+.panel3 .gallery-wrap .gallery1 {
+    left:10px;
+    top:235px;
+    position:absolute;
+    transition:top 1.2s;
+}
+.panel2.active + .panel3 .gallery1 {
+    top:calc(-100vh + 540px);
+}
+.panel3 .gallery-wrap .gallery2 {
+    position:absolute;
+    bottom:0;
+    left:283px;
+}
