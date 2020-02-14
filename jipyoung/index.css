@@ -14,10 +14,6 @@ html {
     font-family: 'Crimson Text', serif;
 }
 
-/* 스크롤 */
-body {
-    min-height: 200vh;
-}
 
 /* 노말라이즈 */
 body,
