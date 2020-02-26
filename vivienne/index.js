@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // 우측 퀵 메뉴바
 $(window).scroll(function() {
     var scrollTop = $(this).scrollTop();
@@ -35,20 +36,56 @@ $('.slider > .page-btns > div').click(function(){
 
 // 좌/우 버튼 추가 슬라이더
 $('.slider-1 > .side-btns > div').click(function(){
+=======
+// 퀵 메뉴
+$(window).scroll(function() {
+    var scrollTop = $(this).scrollTop();
+    var duration = 500;
+    
+    $('.quick').stop().animate({top:scrollTop},duration);
+    
+});
+
+// 슬라이더
+var Slider__$pageBtns = $('.slider-1 .page-btns > div');
+
+Slider__$pageBtns.click(function() {
+    var $this = $(this);
+    $this.addClass('active');
+    $this.siblings('.active').removeClass('active');
+    
+    var $slider = $this.closest('.slider-1');
+    var $current = $slider.find('> .slides > div.active');
+    var index = $this.index();
+    
+    $current.removeClass('active');
+    $slider.find(' > .slides > div').eq(index).addClass('active');
+});
+
+$('.slider-1 > .side-btns > div').click(function () {
+>>>>>>> 87f97debf2dddbc2ac73c217f7c43a462e51d0a4
     var $this = $(this);
     var $slider = $this.closest('.slider-1');
     
     var index = $this.index();
     var isLeft = index == 0;
     
+<<<<<<< HEAD
     var $current = $slider.find(' > .page-btns > div.active');
     var $post;
     
     if ( isLeft ){
+=======
+    var $current = $slider.find(' > .page-btns > div.active ');
+    var $post;
+    
+    if (isLeft) {
+>>>>>>> 87f97debf2dddbc2ac73c217f7c43a462e51d0a4
         $post = $current.prev();
     }
     else {
         $post = $current.next();
+<<<<<<< HEAD
     };
     
     if ( $post.length == 0 ){
@@ -59,10 +96,23 @@ $('.slider-1 > .side-btns > div').click(function(){
             $post = $slider.find(' > .page-btns > div:first-child');
         }
     };
+=======
+    }
+    
+    if ($post.length == 0) {
+        if (isLeft) {
+            $post = $slider.find(' > .page-btns  > div:last-child');
+        }
+        else {
+            $post = $slider.find(' > .page-btns  > div:first-child');
+        }
+    }
+>>>>>>> 87f97debf2dddbc2ac73c217f7c43a462e51d0a4
     
     $post.click();
 });
 
+<<<<<<< HEAD
 setInterval(function(){
     $('.slider-1 > .side-btns > div').eq(1).click();
 }, 3000);
@@ -103,17 +153,33 @@ checkBtns.click(function(){
 
 // 베스트 오브 베스트 아이템
 $('.item-con > .item-menu > ul > li').mouseenter(function(){
+=======
+setInterval(function() {
+    $('.slider-1 > .side-btns > div').eq(1).click();
+},3000);
+
+// 베스트 오브 아이템
+$('.item-con > .item-menu > ul > li ').mouseenter(function() {
+>>>>>>> 87f97debf2dddbc2ac73c217f7c43a462e51d0a4
     var $this = $(this);
     var index = $this.index();
     
     $this.addClass('active');
     $this.siblings('.active').removeClass('active');
     
+<<<<<<< HEAD
     var $item__con = $(this).closest('.item-con');
+=======
+    var $item__con = $this.closest('.item-con');
+>>>>>>> 87f97debf2dddbc2ac73c217f7c43a462e51d0a4
     
     var $current = $item__con.find(' > .best-item-list.active');
     var $post = $item__con.find(' > .best-item-list').eq(index);
     
     $current.removeClass('active');
     $post.addClass('active');
+<<<<<<< HEAD
 });
+=======
+})
+>>>>>>> 87f97debf2dddbc2ac73c217f7c43a462e51d0a4
