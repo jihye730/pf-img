@@ -1,3 +1,12 @@
+//a
+$('a').attr('target', '_blank');
+
+$('a').click(function() {
+    if ( $(this).attr('href') == '#' ) {
+        return false;
+    }
+});
+
 // 헤더 메뉴바 스크롤시 변화
 function NotScrollTop0__init() {
     var scrollTop = $(window).scrollTop();

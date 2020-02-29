@@ -1,5 +1,11 @@
-//메인 슬릭슬라이드
+//a
+$('a').attr('target', '_blank');
 
+$('a').click(function() {
+    if ( $(this).attr('href') == '#' ) {
+        return false;
+    }
+});
 
 //visible animation
 function ActiveOnVisible__init() {

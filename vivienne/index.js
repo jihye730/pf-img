@@ -1,4 +1,12 @@
-<<<<<<< HEAD
+//a
+$('a').attr('target', '_blank');
+
+$('a').click(function() {
+    if ( $(this).attr('href') == '#' ) {
+        return false;
+    }
+});
+
 // 우측 퀵 메뉴바
 $(window).scroll(function() {
     var scrollTop = $(this).scrollTop();
