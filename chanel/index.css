@@ -347,28 +347,30 @@ html, body {
     text-align:center;
     padding:200px 0;
 }
-.footer > .con > .row > .cell:first-child {
-    width:99%;
-}
-.footer > .con > .row > .cell:last-child {
-    width:1%;
+.footer > .con .f-menu {
+    width:100%;
 }
 .footer > .con .f-menu > ul > li {
     width:25%;
+    text-align:center;
 }
-.footer > .con .f-menu > ul > li > a {
+.footer > .con .f-menu > ul > li > ul > li {
+    text-align:left;
+    display:inline-block;
+}
+.footer > .con .f-menu > ul > li > ul > li > a {
     display:block;
     padding-bottom:15px;
-    font-size:14px;
     font-weight:600;
     transition:opacity .3s;
 }
-.footer > .con .f-menu > ul > li:first-child:hover > a {
+.footer > .con .f-menu > ul > li:first-child:hover > ul > li > a {
     opacity:70%;
 }
-.footer > .con .f-menu ul > li {
+.footer > .con .f-menu > ul > li ul > li {
     padding:6px 0;
 }
-.footer > .con .f-menu > ul ul > li > a {
+.footer > .con .f-menu > ul ul ul > li > a {
     opacity:70%;
+    font-size:18px;
 }
