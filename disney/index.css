@@ -6,6 +6,9 @@ html {
     font-family: "Noto Sans KR", sans-serif;
 }
 
+html, body {
+    overflow-x: hidden;
+}
 /* wrap */
 .wrap {
     background-image:url(https://jihye730.github.io/pf-img/disney/img/indeximg/bg-marida.jpg);

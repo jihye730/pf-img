@@ -6,6 +6,10 @@ html {
     background-color: #f6f6f3;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 .header-wrap {
     font-family: 'Crimson Text', serif;
 }
