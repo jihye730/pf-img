@@ -15,6 +15,18 @@ $('.page1 > .item-menu > ul > li').mouseenter(function () {
     $post.addClass('active');
 });
 
+//language box
+$('.wrap > .locate > .language-box > .box-1').click(function() {
+    var $this = $(this);
+    var $languageBox = $this.closest('.language-box');
+    $languageBox.toggleClass('active');
+});
+//footer 마우스리브
+$('.wrap > .locate > .language-box').mouseleave(function() {
+    var $this = $(this);
+    $this.removeClass('active');
+});
+
 //cursor box
 $('document').ready(function () {
     $('.item-list > ul > li > a').mousemove(function (e) {
