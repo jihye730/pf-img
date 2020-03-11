@@ -22,15 +22,16 @@ html, body {
 .wrap {
     text-align:center;
     width:1920px;
+    position: relative;
 }
 /* 위치, LANGUAGE */
 .wrap > .locate {
     position:absolute;
     right: 0;
-    margin:30px 20px;
+    margin:30px;
 }
 .wrap > .locate > img {
-    width:25px;
+    width:20px;
 }
 .wrap > .locate > .language-box {
     font-size:18px;
@@ -39,7 +40,7 @@ html, body {
     padding-left:20px;
 }
 .wrap > .locate > .language-box > .box-1 {
-    padding:5px 24px 15px 30px;
+    padding:0 24px 15px 30px;
 }
 .wrap > .locate > .language-box > .box-1 div:first-child {
     padding-right:30px;
@@ -84,11 +85,12 @@ html, body {
 .wrap > .menu-box > ul > li {
     padding:15px 70px;
     font-weight:bold;
-    font-size:24px;
-    transition:opacity .3s;
+    font-size:22px;
+    transition:background .4s, color .4s;
 }
 .wrap > .menu-box > ul > li:hover {
-    opacity:50%;
+    color:#fff;
+    background-color:#222;
 }
 .wrap > .banner {
     margin-top:-4px;
@@ -342,6 +344,7 @@ html, body {
 }
 .insta-cursor > img {
     width:50px;
+    filter: invert();
     height:40px;
 }
 /* page5 */
