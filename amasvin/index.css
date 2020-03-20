@@ -180,6 +180,17 @@ html {
     margin:0 auto;
     display:block;
 }
+.page4 .inner .sns {
+    text-align:center;
+}
+.page4 .inner .sns > a {
+    display:inline-block;
+    padding:20px;
+    transition:opacity .3s;
+}
+.page4 .inner .sns > a:hover {
+    opacity:70%;
+}
 .page4 .inner {
     min-width:1902px;
     margin-top:200px;
