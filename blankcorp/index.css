@@ -432,8 +432,7 @@ html.not-scroll-top-0 .header > .language-box.active > .select-l > .open-btn::af
 }
 
 /* 임시 탑 버튼 */
-.footer > .f-inner::before {
-    content: "";
+.footer > .f-inner .top-btn {
     display: block;
     background-image: url(https://jihye730.github.io/pf-img/blankcorp/img/indeximg/lang_down_roll.png);
     background-repeat: no-repeat;
