@@ -1,0 +1,153 @@
+@import url(https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff);
+
+body,
+html {
+    font-family: 'Recipekorea';
+}
+
+.con {
+    max-width: 1320px;
+}
+
+.header {
+    background-image: url(./img/white_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 190px;
+}
+
+.header .gnb {
+    text-align: right;
+}
+
+.header .gnb > ul {
+    display: inline-block;
+    text-align: right;
+    padding-top: 20px;
+}
+
+.header .gnb > ul > li.search {
+    font-size: 22px;    
+}
+.header .gnb > ul > li.black-box {
+    vertical-align: top;
+    display: block;
+}
+
+.header .gnb > ul > li.black-box > a {
+    color: #fff;
+    background-color: #222;
+    display: block;
+    border-radius: 35px;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+}
+
+.header .gnb > ul > li {
+    padding: 0 20px;
+    font-size: 20px;
+    color: #6a6666;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+.header .gnb > ul > li:hover {
+    color: #222;
+}
+
+.header > .con > .top-menu > .cell:last-child {
+    width: calc(100% - 246px);
+}
+
+.header > .con > .top-menu .menu-1 > li {
+    font-size: 24px;
+    padding-top: 50px;
+    width: 20%;
+    text-align: right;
+    font-weight: 800;
+}
+
+.header > .con > .top-menu .menu-1 > li:hover {
+    color: #00704a;
+}
+
+.main-banner > .slider > .slides > div.active {
+    opacity: 100%;
+    visibility: visible;
+}
+.main-banner > .slider > .slides > div {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s, visible .3s;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.main-banner > .slider > .slides > div:nth-child(1) {
+    background-image: url(./img/main_bg1.png);
+}
+.main-banner > .slider > .slides > div:nth-child(1) .txt {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100px; 
+    text-align: center;
+}
+.main-banner > .slider > .slides > div:nth-child(1) .title2 {
+    font-size: 100px;
+    color: #00704a;
+    padding: 20px 0;
+}
+.main-banner > .slider > .slides > div:nth-child(2){
+    background-image: url(./img/main_bg2.png);
+}
+.main-banner > .slider > .page-btns {
+    position: absolute;
+    bottom: 550px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main-banner > .slider {
+    position: relative;
+    height: 1710px;
+}
+.main-banner > .slider > .slides {
+    width: 100%;
+    height: 100%;
+}
+.main-banner > .slider > .page-btns > div {
+    background-color: #fff;
+    display: inline-block;
+    margin: 0 15px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px 3px #afafaf;
+}
+.main-banner > .slider > .page-btns > div.active {
+    background-color: #00704a;
+}
+.main-banner > .slider > .page-btns > div:last-child {
+    margin-right: 0;
+}
+/* page1 */
+.page1 {
+    text-align: center;
+}
+.page1 .item-menu {
+    padding-top: 50px;
+    width: 500px;
+    margin: 0 auto;
+}
+.page1 .item-menu > li {
+    width: 33.333%;
+    font-size: 22px;
+}
+.page1 .item-menu > li.active {
+    color: #d93c50;
+}
