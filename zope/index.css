@@ -980,7 +980,6 @@ section .news h4 {
     color:#111;
     padding:0 0 20px 25px;
     border-bottom:1px solid #cfcfcf;
-    white-space:nowrap;
 }
 section .layout .letter > .box-1 > h4 > div {
     font-size:14px;
@@ -1255,6 +1254,131 @@ section .layout .job > .box-1 > div > .list > .infor span {
     background:none;
 }
 /* page2 끝 */
+/* page2 반응형 시작 */
+/* 뉴스슬라이드 반응형 */
+@media (max-width:1050px) and (min-width:851px) {
+    section > .news > .layout > .news-slider {
+        height: 300px;
+    }
+}
+
+@media (max-width:850px) and (min-width:721px) {
+    section > .news > .layout > .news-slider {
+        height: 250px;
+    }
+}
+
+@media (max-width:720px) and (min-width:611px) {
+    section > .news > .layout > .news-slider {
+        height: 200px;
+    }
+}
+
+@media (max-width:790px) and (min-width:696px) {
+    section > .news > .layout > .news-slider > .news-slides > ul > li > ul > li > .txt .content {
+        height: 35px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 10px;
+    }
+
+    section > .news > .layout > .news-slider > .news-slides > ul > li > ul > li > .txt {
+        padding: 15px 6%;
+    }
+}
+
+@media (max-width:695px) and (min-width:611px) {
+    section > .news > .layout > .news-slider > .news-slides > ul > li > ul > li > .txt .content {
+        height: 30px;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 5px;
+    }
+
+    section > .news > .layout > .news-slider > .news-slides > ul > li > ul > li > .txt {
+        padding: 12px 6%;
+    }
+}
+
+@media (max-width:610px) and (min-width:519px) {
+    section > .news > .layout > .news-slider > .news-slides > ul > li > ul > li > .txt .content {
+        height: 30px;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 14px;
+        margin-top: 3px;
+    }
+
+    section > .news > .layout > .news-slider > .news-slides > ul > li > ul > li > .txt {
+        padding: 9px 6%;
+    }
+
+    section > .news > .layout > .news-slider {
+        height: 170px;
+    }
+}
+
+@media (max-width:520px) {
+    section > .news > .layout > .news-slider > .news-slides > ul > li > ul > li > .txt .content {
+        height: 30px;
+        font-weight: 300;
+        font-size: 8px;
+        line-height: 10px;
+        margin-top: 3px;
+    }
+
+    section > .news > .layout > .news-slider > .news-slides > ul > li > ul > li > .txt {
+        padding: 4px 6%;
+    }
+
+    section > .news > .layout > .news-slider > .news-slides > ul > li > ul > li > .txt .date {
+        font-size: 10px;
+    }
+
+    section > .news > .layout > .news-slider {
+        height: 140px;
+    }
+}
+
+/* news 공지사항 반응형 배치*/
+
+@media(max-width:920px) {
+    section .layout .notice {
+        width: 100%;
+    }
+
+    section .layout .job {
+        width: 65%;
+        float: left;
+        padding: 0;
+    }
+
+    section .layout .letter {
+        width: 35%;
+        float: right;
+    }
+
+    .content-box-1 > .popup {
+        width: 100%;
+    }
+
+    .content-box-1 > .video {
+        width: 100%;
+        padding-top: 20px;
+    }
+}
+
+@media(max-width:628px) {
+    section .layout .letter > .box-1 > .list {
+        transform: scale(.8);
+        padding: 7px 0;
+    }
+}
+
+/* page2 반응형 끝 */
+
 
 /* page3 - service 시작 */
 section > .service {
@@ -1857,7 +1981,6 @@ section > .management > .layout > .cell:first-child > .title > span::after {
 section > .management > .layout > .cell:first-child > .content {
     font-size:15px;
     line-height:24px;
-    white-space:nowrap;
 }
 section > .management > .layout > .cell:last-child > ul {
     text-align:center;
