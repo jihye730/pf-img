@@ -8,12 +8,14 @@ html {
 .con {
     max-width: 1320px;
 }
-
+/* 헤더 */
 .header {
     background-image: url(./img/white_bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    height: 190px;
+    background-size: cover;
+    width: 100%;
+    height: auto;
 }
 
 .header .gnb {
@@ -26,31 +28,27 @@ html {
     padding-top: 20px;
 }
 
-.header .gnb > ul > li.search {
-    font-size: 22px;    
-}
-.header .gnb > ul > li.black-box {
-    vertical-align: top;
+.header .gnb > ul > li > a {
     display: block;
 }
 
+.header .gnb > ul > li.search > a {
+    transform-origin: bottom;
+    transform: scale(1.2);
+}
+
 .header .gnb > ul > li.black-box > a {
-    color: #fff;
-    background-color: #222;
-    display: block;
-    border-radius: 35px;
-    width: 100px;
-    text-align: center;
-    padding: 10px;
+    display: inline;
+    background-color:black;
+    color:white;
+    padding:10px 15px 5px 15px;
+    border-radius: 50px;
 }
 
 .header .gnb > ul > li {
     padding: 0 20px;
-    font-size: 20px;
     color: #6a6666;
-    vertical-align: bottom;
-    display: inline-block;
-}
+}    
 
 .header .gnb > ul > li:hover {
     color: #222;
@@ -60,6 +58,9 @@ html {
     width: calc(100% - 246px);
 }
 
+.header > .con > .top-menu .menu-1 {
+    padding-bottom: 45px;
+}
 .header > .con > .top-menu .menu-1 > li {
     font-size: 24px;
     padding-top: 50px;
@@ -72,10 +73,57 @@ html {
     color: #00704a;
 }
 
+/* sub-menu */
+.sub-menu {
+    width: 100%;
+    height: 400px;
+    background-color: #d93c50;
+    opacity: 92%;
+    position: absolute;
+    z-index: 99;
+    display: none;
+    color: #fff;
+}
+.sub-menu .con {
+    opacity: 0;
+    transition: opacity .3s;
+}
+.sub-menu.active .con {
+    opacity: 1;
+    transition: opacity .3s;
+    transition-delay: .3s;
+}
+.sub-menu .img-box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sub-menu .img-box > img {
+    width: 200px;
+}
+.sub-menu .row {
+    padding-top: 45px;
+    width: 1074px;
+    float:right;
+}
+.sub-menu .row > .cell {
+    width: 20%;
+    font-weight: 200;
+    text-align: right;
+}
+.sub-menu .row > .cell > ul {
+    text-align: left;
+}
+.sub-menu .row > .cell > ul > li {
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+/* 메인베너 - 슬라이더 */
 .main-banner > .slider > .slides > div.active {
     opacity: 100%;
     visibility: visible;
 }
+
 .main-banner > .slider > .slides > div {
     width: 100%;
     height: 100%;
@@ -87,38 +135,45 @@ html {
     background-repeat: no-repeat;
     position: relative;
 }
+
 .main-banner > .slider > .slides > div:nth-child(1) {
     background-image: url(./img/main_bg1.png);
 }
+
 .main-banner > .slider > .slides > div:nth-child(1) .txt {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 100px; 
+    top: 38%;
+    left: 100px;
     text-align: center;
 }
+
 .main-banner > .slider > .slides > div:nth-child(1) .title2 {
     font-size: 100px;
     color: #00704a;
     padding: 20px 0;
 }
-.main-banner > .slider > .slides > div:nth-child(2){
+
+.main-banner > .slider > .slides > div:nth-child(2) {
     background-image: url(./img/main_bg2.png);
 }
+
 .main-banner > .slider > .page-btns {
     position: absolute;
     bottom: 550px;
     left: 50%;
     transform: translateX(-50%);
 }
+
 .main-banner > .slider {
     position: relative;
-    height: 1710px;
+    height: 1740px;
 }
+
 .main-banner > .slider > .slides {
     width: 100%;
     height: 100%;
 }
+
 .main-banner > .slider > .page-btns > div {
     background-color: #fff;
     display: inline-block;
@@ -129,25 +184,49 @@ html {
     border-radius: 50%;
     box-shadow: 3px 3px 3px 3px #afafaf;
 }
+
 .main-banner > .slider > .page-btns > div.active {
     background-color: #00704a;
 }
+
 .main-banner > .slider > .page-btns > div:last-child {
     margin-right: 0;
 }
+
 /* page1 */
 .page1 {
     text-align: center;
 }
+
 .page1 .item-menu {
     padding-top: 50px;
     width: 500px;
     margin: 0 auto;
 }
+
 .page1 .item-menu > li {
     width: 33.333%;
+    cursor: pointer;
     font-size: 22px;
 }
+
 .page1 .item-menu > li.active {
     color: #d93c50;
+}
+
+.page1 .all-item {
+    background-image: url(./img/donut_bg.png);
+    width: 100%;
+    height: 1856px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page1 .item-list .best-item {
+    display: inline-block;
+    padding-top: 70px;
+}
+
+.page1 .item-list .best-item > .cell:not(:last-child) {
+    padding-right: 50px;
 }

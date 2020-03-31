@@ -2,15 +2,6 @@ setTimeout(function() {
     $(window).scrollTop(0);
 }, 100);
 
-//a
-$('a').attr('target', '_blank');
-
-$('a').click(function() {
-    if ( $(this).attr('href') == '#' ) {
-        return false;
-    }
-});
-
 // 헤더 메뉴바 스크롤시 변화
 function NotScrollTop0__init() {
     var scrollTop = $(window).scrollTop();
@@ -290,7 +281,7 @@ $('.footer > .layout > .site-box > .relate-site').mouseleave(function() {
 
 
 //우측 팝업메뉴 윈도우v 열기
-$('.wrap .top-bar .gnb .allmenu-btn').click(function() {
+$('.wrap .top-bar .gnb .allmenu-btn, .mobile-menu-bar > .btns > a.allmenu-btn ').click(function() {
     var $this = $(this);
     var $wrap = $this.closest('.wrap');
     var $sideMap = $wrap.find('> .side-map');

@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <!-- aos -->
-    <link href="https://cdn.rawgit.com/michalsnik/aos/1.0.1/dist/aos.css">
-    <script src="https://cdn.rawgit.com/michalsnik/aos/1.0.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <link rel="stylesheet" href="../common.css">
     <link rel="stylesheet" href="./index.css">
@@ -49,11 +49,64 @@
             </div>
         </div>
     </div>
+    <div class="sub-menu">
+        <div class="con">
+            <div class="img-box">
+                <img src="./img/sub-menu.png" alt="">
+            </div>
+            <ul class="row">
+                <li class="cell">
+                    <ul>
+                        <li><a href="#">신제품/인기제품</a></li>
+                        <li><a href="#">이달의 메뉴</a></li>
+                        <li><a href="#">도넛</a></li>
+                        <li><a href="#">커피/음료</a></li>
+                        <li><a href="#">아이스크림</a></li>
+                        <li><a href="#">브랜딩 제품소개</a></li>
+                    </ul>
+                </li>
+                <li class="cell">
+                    <ul>
+                        <li><a href="#">STORE</a></li>
+                        <li><a href="#">매장찾기</a></li>
+                        <li><a href="#">가맹점모집</a></li>
+                    </ul>
+                </li>
+                <li class="cell">
+                    <ul>
+                        <li><a href="#">EVENT</a></li>
+                        <li><a href="#">진행 이벤트</a></li>
+                        <li><a href="#">종료 이벤트</a></li>
+                        <li><a href="#">당첨자 발표</a></li>
+                        <li><a href="#">그룹 옴니채널</a></li>
+                        <li><a href="#">제휴 서비스</a></li>
+                    </ul>
+                </li>
+                <li class="cell">
+                    <ul>
+                        <li><a href="#">BRAND</a></li>
+                        <li><a href="#">도넛극장</a></li>
+                        <li><a href="#">브랜드스토리</a></li>
+                        <li><a href="#">브랜드영상</a></li>
+                        <li><a href="#">상품권 구입안내</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </li>
+                <li class="cell">
+                    <ul>
+                        <li><a href="#">SHARE</a></li>
+                        <li><a href="#">설문조사</a></li>
+                        <li><a href="#">온라인몰</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
     <div class="main-banner">
         <div class="slider">
             <div class="slides">
                 <div class="active">
-                    <div class="txt" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="txt" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="title1"><img src="./img/main_bg1_txt1.png" alt=""></div>
                         <div class="title2">오리지널 도넛</div>
                         <a href="#" class="view_more_btn"><img src="./img/view_more_btn.png" alt=""></a>
@@ -73,20 +126,51 @@
     </div>
 
     <div class="page1">
-        <div class="con">
-            <div class="title"><img src="./img/best_title.png" alt=""></div>
-            <ul class="item-menu row">
-                <li class="cell active">DONUT</li>
-                <li class="cell">ECT MENU</li>
-                <li class="cell">COFFEE</li>
-            </ul>
-            <li class="item-list row">
-                <div class="cell"><img src="./img/donut_best1.png" alt=""></div>
-                <div class="cell"><img src="./img/donut_best2.png" alt=""></div>
-                <div class="cell"><img src="./img/donut_best3.png" alt=""></div>
+        <div class="title"><img src="./img/best_title.png" alt=""></div>
+        <ul class="item-menu row">
+            <li class="cell active">DONUT</li>
+            <li class="cell">ECT MENU</li>
+            <li class="cell">COFFEE</li>
+        </ul>
+        <div class="item-list active">
+            <li class="best-item row" data-aos="fade-up" data-aos-delay="200">
+                <div class="cell">
+                    <img src="./img/donut_best1.png" alt="">
+                    <div class="pro-name">재밌는 딸기농장</div>
+                    <div class="pro-price">2,800</div>
+                </div>
+                <div class="cell">
+                    <img src="./img/donut_best2.png" alt="">
+                    <div class="pro-name">딸기에 반한 꿀벌</div>
+                    <div class="pro-price">2,600</div>
+                </div>
+                <div class="cell">
+                    <img src="./img/donut_best3.png" alt="">
+                    <div class="pro-name">벚꽃 내린 딸기</div>
+                    <div class="pro-price">2,900</div>
+                </div>
             </li>
+            <div class="all-item">
+                <ul class="row">
+                    <li class="cell"><img src="" alt=""></li>
+                    <li class="cell"><img src="" alt=""></li>
+                    <li class="cell"><img src="" alt=""></li>
+                    <li class="cell"><img src="" alt=""></li>
+                    <li class="cell"><img src="" alt=""></li>
+                    <li class="cell"><img src="" alt=""></li>
+                    <li class="cell"><img src="" alt=""></li>
+                    <li class="cell"><img src="" alt=""></li>
+                    <li class="cell"><img src="" alt=""></li>
+                </ul>
+            </div>
         </div>
+        <div class="item-list">
+
+        </div>
+        <div class="item-list"></div>
     </div>
 
     <script src="./index.js"></script>
-</body></html>
+</body>
+
+</html>
