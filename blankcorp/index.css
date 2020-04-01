@@ -6,6 +6,7 @@ html {
     font-family: font-family: 'MarkPro-Book';
     overflow-x: hidden;
 }
+
 /* 반응형 레이아웃 */
 .con {
     max-width: 1200px;
@@ -462,6 +463,17 @@ html.not-scroll-top-0 .header > .language-box.active > .select-l > .open-btn::af
 /* 임시 탑 버튼 끝 */
 .footer .footer-mark {
     width: 420px;
+}
+
+@media (max-width:430px) {
+    .footer .footer-mark {
+        width: 320px;
+    }
+
+    .footer .footer-infor {
+        width: 360px;
+    }
+
 }
 
 .footer .footer-mark .f-logo {
