@@ -313,11 +313,13 @@ html.not-scroll-top-0 .wrap .top-bar > .gnb > .btns > .allmenu-btn::after,
     padding: 40px 30px;
     background-color: #fff;
 }
+
 .top-bar .content-box > ul > li {
-    display:none;
+    display: none;
 }
+
 .top-bar:hover .content-box > ul > li.active {
-    display:block;
+    display: block;
 }
 
 .top-bar .content-box > ul > li > .row > .cell:last-child > nav > ul > li {
@@ -1601,6 +1603,7 @@ section > .service {
     padding: 110px 0;
     margin-top: 120px;
     height: auto;
+    overflow: hidden;
 }
 
 section > .service > .layout {
@@ -2312,6 +2315,12 @@ section > .business > .layout > .slider .btn-next {
     }
 }
 
+@media (max-width:515px) {
+    section > .business > .layout {
+        padding: 110px 20px 50px 4px;
+    }
+}
+
 /* page4 반응형 끝 */
 
 /* page 5 - management 시작 */
@@ -2365,7 +2374,6 @@ section > .management > .layout > .cell:first-child > .title > span::after {
 section > .management > .layout > .cell:first-child > .content {
     font-size: 15px;
     line-height: 24px;
-    white-space: nowrap;
 }
 
 section > .management > .layout > .cell:last-child > ul {
@@ -2930,6 +2938,46 @@ section > .wrap > .side-map > .inner > .menu-box > .nav > li > ul.row {
     .footer > .layout > .address,
     .footer > .layout > .copy {
         margin-left: 0;
+    }
+}
+
+/* side menu 끝*/
+/* side menu 반응형*/
+@media (max-width:1070px) and (min-width:961px) {
+    section > .wrap > .side-map > .inner > .menu-box > ul.nav > li > ul > li {
+        padding: 0 10px;
+        width: 33.333%;
+        min-height: 230px;
+    }
+}
+
+@media (max-width:970px) {
+    section > .wrap > .side-map > .inner > .menu-box > ul.nav > li > ul > li {
+        padding: 0 10px;
+        width: 50%;
+        min-height: 230px;
+    }
+
+    section > .wrap > .side-map > .inner > .menu-box > ul.nav > li {
+        padding: 40px 60px 40px 25%;
+    }
+}
+
+@media (max-width:735px) and (min-width:601px) {
+    section > .wrap > .side-map > .inner > .menu-box > ul.nav > li {
+        padding: 40px 60px 40px 28%;
+    }
+}
+
+@media (max-width:600px) {
+    section > .wrap > .side-map > .inner > .menu-box > ul.nav > li {
+        padding: 40px 60px 40px 34%;
+    }
+
+    section > .wrap > .side-map > .inner > .menu-box > ul.nav > li > ul > li {
+        padding: 0 10px;
+        width: 100%;
+        min-height: 230px;
     }
 }
 

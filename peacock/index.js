@@ -1,11 +1,9 @@
-//a
-$('a').attr('target', '_blank');
+setTimeout(function() {
+    $(window).scrollTop(2000);
+}, 100);
 
-$('a').click(function() {
-    if ( $(this).attr('href') == '#' ) {
-        return false;
-    }
-});
+//메인 슬릭슬라이드
+
 
 //visible animation
 function ActiveOnVisible__init() {

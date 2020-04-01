@@ -6,6 +6,7 @@ html, body {
     font-family: 'Noto Sans KR', "Sans-serif";
     overflow-x:hidden;
 }
+
 /* 헤더 */
 .header > .top-bar {
     font-family: "dincond-boldregular";
