@@ -2546,15 +2546,15 @@ section > .management > .layout > .cell:last-child > ul > li.hidden > .txt-box {
     position: relative;
 }
 
-.footer::after {
+.footer > .layout > .menu::after {
     content: "";
     display: block;
     width: 100%;
     height: 1px;
     background: #414141;
     position: absolute;
+    top: 100%;
     left: 0;
-    top: 52px;
 }
 
 .footer > .layout {
@@ -2568,6 +2568,7 @@ section > .management > .layout > .cell:last-child > ul > li.hidden > .txt-box {
 .footer > .layout > .menu {
     padding: 16px 0;
     margin-bottom: 25px;
+    position: relative;
 }
 
 .footer > .layout > .menu > ul > li:not(:first-child) {
@@ -2594,6 +2595,15 @@ section > .management > .layout > .cell:last-child > ul > li.hidden > .txt-box {
     font-size: 14px;
     transition: opacity .3s, text-decoration .3s;
     cursor: pointer;
+}
+
+.footer > .layout > .menu > ul > li:first-child {
+    color: #ecc028;
+    opacity: 1;
+}
+
+.footer > .layout > .menu > ul > li > span {
+    display: inline-block;
 }
 
 .footer > .layout > .menu > ul > li:hover {
@@ -3031,6 +3041,38 @@ section > .wrap > .side-map > .inner > .menu-box > .nav > li > ul.row {
 
     .footer > .layout {
         text-align: center;
+    }
+}
+
+@media (max-width:430px) {
+    .footer > .layout > .site-box {
+        width: 190px;
+        margin: 0 auto;
+    }
+
+    .footer > .layout > .site-box > .sns-link {
+        padding-bottom: 20px;
+        margin: 0 auto;
+        width: 165px;
+        float: none;
+    }
+
+    .footer > .layout > .site-box > .sns-link a {
+        margin: 0 3.5px !important;
+    }
+
+    .footer > .layout > .site-box > .relate-site {
+        width: 100%;
+    }
+
+    .footer > .layout > .menu > ul > li > span {
+        display: block;
+    }
+
+    .footer > .layout > .menu > ul > li:not(:first-child) {
+        padding-left: 8px;
+        margin-left: 8px;
+        position: relative;
     }
 }
 
